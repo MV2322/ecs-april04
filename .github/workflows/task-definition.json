@@ -1,8 +1,8 @@
 {
-	"family": "DSO-0405TDF",
+	"family": "dso-latesttdf",
 	"taskRoleArn": "arn:aws:iam::767398097747:role/ecstaskrole",
 	"containerDefinitions": [{
-		"name": "demo-container",
+		"name": "apache-container",
 		"image": "767398097747.dkr.ecr.us-east-2.amazonaws.com/malar-repo",
 		"cpu": 400,
 		"memory": 300,
