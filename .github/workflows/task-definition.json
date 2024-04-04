@@ -1,0 +1,19 @@
+{
+	"family": "DSO-0405TDF",
+	"taskRoleArn": "arn:aws:iam::767398097747:role/ecstaskrole",
+	"containerDefinitions": [{
+		"name": "demo-container",
+		"image": "767398097747.dkr.ecr.us-east-2.amazonaws.com/malar-repo",
+		"cpu": 400,
+		"memory": 300,
+		"memoryReservation": 200,
+		"volumesFrom": [],
+		"portMappings": [{
+			"hostPort": 0,
+			"containerPort": 80,
+			"protocol": "tcp"
+		}],
+		"essential": true,
+		"mountPoints": []
+	}]
+}
