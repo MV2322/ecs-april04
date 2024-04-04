@@ -80,10 +80,10 @@ jobs:
 
 
              if [ "${{ github.ref }}" == "refs/heads/master" ]; then
-             SERVICE_NAME="dsosat-0405"
+             SERVICE_NAME="dsosat-svc-latest"
              IMAGE_VERSION="${{ env.BRANCH_NAME }}-${{ github.run_number }}"
-             TASK_FAMILY="DSO-0405TDF"
-             CLUSTER="dso-0405"
+             TASK_FAMILY="dso-latesttdf"
+             CLUSTER="latest"
              TASK_ROLE="ecstaskrole"
              JSON_FILE=".github/workflows/task-definition"
              RUNNING_COUNT=1
